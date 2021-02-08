@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Poppins';
-  src: url("../fonts/Poppins-Regular.ttf");
+  src: url("../fonts/poppins/Poppins-Regular.ttf");
 }
 
 /*!
@@ -15814,13 +15814,16 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+body {
+  font-family: 'Poppins';
+}
+
 header {
   margin-bottom: 50px;
 }
 
 header h1 {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin: 50px;
   font-size: 60px;
 }
@@ -15886,6 +15889,12 @@ header nav button {
   height: 600px;
 }
 
+@media screen and (max-width: 375px) {
+  #sect1 {
+    flex-direction: column;
+  }
+}
+
 #sect2 {
   display: flex;
   justify-content: space-evenly;
@@ -15938,6 +15947,13 @@ header nav button {
   border-top: 4px solid white;
   width: 400px;
   margin: auto;
+}
+
+@media screen and (max-width: 375px) {
+  #sect2 {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 #sect3 {
@@ -16178,32 +16194,51 @@ footer #topFtr #topFtrIn {
   justify-content: space-evenly;
 }
 
-footer #topFtr #topFtrIn div {
+footer #topFtr #topFtrIn .topFtrJsp {
   display: flex;
   flex-direction: column;
   width: 500px;
   margin: 0 20px;
 }
 
-footer #topFtr #topFtrIn div .ftrTitle {
+footer #topFtr #topFtrIn .topFtrJsp .ftrTitle {
   color: white;
   font-size: 25px;
   margin: 50px 0;
 }
 
-footer #topFtr #topFtrIn div a {
+footer #topFtr #topFtrIn .topFtrJsp a {
   color: white;
   font-size: 18px;
   margin: 8px 0;
 }
 
-footer #topFtr #topFtrIn div p {
+footer #topFtr #topFtrIn .topFtrJsp p {
   color: #606F76;
   font-size: 20px;
 }
 
-footer #topFtr #topFtrIn div .tag {
+footer #topFtr #topFtrIn .topFtrJsp .tagDaddy {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer #topFtr #topFtrIn .topFtrJsp .tagDaddy .tag {
   color: #606F76;
   font-size: 20px;
-  flex-wrap: wrap;
+  border: 1px solid #606f76;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 7px 10px;
+}
+
+footer #bottomFtr {
+  text-align: center;
+  background-color: black;
+  padding: 30px 0;
+}
+
+footer #bottomFtr span {
+  font-size: 26px;
+  color: #606F76;
 }
