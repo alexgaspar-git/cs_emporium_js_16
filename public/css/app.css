@@ -16024,3 +16024,186 @@ header nav button {
   padding: 10px;
   font-size: 17px;
 }
+
+#sect5 h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  margin: 50px 0;
+}
+
+#sect5 .rProductsMain {
+  display: flex;
+  justify-content: center;
+}
+
+#sect5 .rProductsMain .rProducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 25px;
+}
+
+#sect5 .rProductsMain .rProducts img {
+  height: 220px;
+}
+
+#sect5 .rProductsMain .rProducts .nomProduit {
+  font-size: 20px;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+#sect5 .rProductsMain .rProducts .prixProduit {
+  font-size: 18px;
+  color: #DD4545;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+#sect5 .rProductsMain .rProducts .prixBarre {
+  font-size: 18px;
+  color: #908f8f;
+  text-decoration: line-through;
+  font-weight: bold;
+}
+
+#sect5 .rProductsMain .rProducts .sale {
+  color: white;
+  border: 0px solid;
+  padding-top: 21px;
+  background-color: #DD4545;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  margin: 20px;
+}
+
+#sect5 #pitiPoin {
+  display: flex;
+  justify-content: center;
+}
+
+#sect5 #pitiPoin div {
+  border: 2px solid black;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  margin: 40px 25px;
+}
+
+#sect6 {
+  margin: 75px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#sect6 .boiteA {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  background-color: #F3F2F3;
+  padding: 50px;
+}
+
+#sect6 .boiteA i {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+#sect6 .boiteA h5 {
+  font-size: 20px;
+}
+
+#sect6 .boiteA span {
+  color: #6b6b6b;
+  text-align: center;
+  margin: 40px 0;
+}
+
+#sect6 .boiteA button {
+  border: 0px solid;
+  background-color: #343A40;
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+#sect6 .boiteB {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 28%;
+  background-color: #DD4545;
+  padding: 50px;
+}
+
+#sect6 .boiteB i {
+  font-size: 40px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+#sect6 .boiteB h5 {
+  font-size: 20px;
+  color: white;
+}
+
+#sect6 .boiteB span {
+  color: white;
+  text-align: center;
+  margin: 40px 0;
+}
+
+#sect6 .boiteB button {
+  border: 0px solid;
+  background-color: white;
+  color: black;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+footer #topFtr {
+  padding: 55px 0;
+  background-color: #343A40;
+}
+
+footer #topFtr #topFtrIn {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer #topFtr #topFtrIn div {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 0 20px;
+}
+
+footer #topFtr #topFtrIn div .ftrTitle {
+  color: white;
+  font-size: 25px;
+  margin: 50px 0;
+}
+
+footer #topFtr #topFtrIn div a {
+  color: white;
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+footer #topFtr #topFtrIn div p {
+  color: #606F76;
+  font-size: 20px;
+}
+
+footer #topFtr #topFtrIn div .tag {
+  color: #606F76;
+  font-size: 20px;
+  flex-wrap: wrap;
+}
