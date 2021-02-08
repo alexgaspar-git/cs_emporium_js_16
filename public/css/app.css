@@ -15846,6 +15846,33 @@ header nav button {
   color: #FFFFFF;
 }
 
+@media screen and (max-width: 375px) {
+  header nav a:nth-of-type(2) {
+    display: none;
+  }
+  header nav a:nth-of-type(3) {
+    display: none;
+  }
+  header nav a:nth-of-type(4) {
+    display: none;
+  }
+  header nav a:nth-of-type(5) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  header nav a:nth-of-type(3) {
+    display: none;
+  }
+  header nav a:nth-of-type(4) {
+    display: none;
+  }
+  header nav a:nth-of-type(5) {
+    display: none;
+  }
+}
+
 #sect1 {
   background-color: #F3F3F3;
   display: flex;
