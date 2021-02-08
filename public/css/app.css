@@ -15843,36 +15843,36 @@ header nav button {
   color: #FFFFFF;
 }
 
-.sect1 {
+#sect1 {
   background-color: #F3F3F3;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.sect1 div {
+#sect1 div {
   display: flex;
   flex-direction: column;
 }
 
-.sect1 div span:first-child {
+#sect1 div span:first-child {
   color: #DD4545;
   font-size: 60px;
 }
 
-.sect1 div span:nth-child(2) {
+#sect1 div span:nth-child(2) {
   font-size: 100px;
   margin-top: -50px;
 }
 
-.sect1 div p {
+#sect1 div p {
   width: 500px;
   font-size: 16px;
   color: #aaa;
   font-weight: bold;
 }
 
-.sect1 div button {
+#sect1 div button {
   background-color: #DD4545;
   width: 30%;
   border: 0px solid;
@@ -15882,17 +15882,17 @@ header nav button {
   padding: 10px;
 }
 
-.sect1 img {
+#sect1 img {
   height: 600px;
 }
 
-.sect2 {
+#sect2 {
   display: flex;
   justify-content: space-evenly;
   margin: 75px 7px;
 }
 
-.sect2 #img1 {
+#sect2 #img1 {
   background-image: url(../img/services/service-1.jpg);
   font-size: 50px;
   color: white;
@@ -15900,7 +15900,7 @@ header nav button {
   text-align: center;
 }
 
-.sect2 #img1 hr {
+#sect2 #img1 hr {
   background-color: white;
   border: none;
   border-top: 4px solid white;
@@ -15908,7 +15908,7 @@ header nav button {
   margin: auto;
 }
 
-.sect2 #img2 {
+#sect2 #img2 {
   background-image: url(../img/services/service-2.jpg);
   font-size: 50px;
   color: white;
@@ -15916,7 +15916,7 @@ header nav button {
   text-align: center;
 }
 
-.sect2 #img2 hr {
+#sect2 #img2 hr {
   background-color: white;
   border: none;
   border-top: 4px solid white;
@@ -15924,7 +15924,7 @@ header nav button {
   margin: auto;
 }
 
-.sect2 #img3 {
+#sect2 #img3 {
   background-image: url(../img/services/slider-3.jpg);
   font-size: 50px;
   color: white;
@@ -15932,7 +15932,7 @@ header nav button {
   text-align: center;
 }
 
-.sect2 #img3 hr {
+#sect2 #img3 hr {
   background-color: white;
   border: none;
   border-top: 4px solid white;
@@ -15940,56 +15940,55 @@ header nav button {
   margin: auto;
 }
 
-.sect3 {
+#sect3 {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.sect3 h3 {
+#sect3 h3 {
   font-size: 40px;
-  margin-top: 50px;
+  margin: 50px 0;
 }
 
-.sect3 .rProductsMain {
+#sect3 .rProductsMain {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 70%;
-  margin: 70px 0;
 }
 
-.sect3 .rProductsMain .rProducts {
+#sect3 .rProductsMain .rProducts {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.sect3 .rProductsMain .rProducts img {
+#sect3 .rProductsMain .rProducts img {
   height: 320px;
 }
 
-.sect3 .rProductsMain .rProducts .nomProduit {
+#sect3 .rProductsMain .rProducts .nomProduit {
   font-size: 20px;
   margin: 15px 0;
   font-weight: bold;
 }
 
-.sect3 .rProductsMain .rProducts .prixProduit {
+#sect3 .rProductsMain .rProducts .prixProduit {
   font-size: 18px;
   color: #DD4545;
   font-weight: bold;
   margin-bottom: 35px;
 }
 
-.sect3 .rProductsMain .rProducts .prixBarre {
+#sect3 .rProductsMain .rProducts .prixBarre {
   font-size: 18px;
   color: #908f8f;
   text-decoration: line-through;
   font-weight: bold;
 }
 
-.sect3 .rProductsMain .rProducts .sale {
+#sect3 .rProductsMain .rProducts .sale {
   color: white;
   border: 0px solid;
   padding-top: 21px;
@@ -15999,4 +15998,29 @@ header nav button {
   height: 70px;
   text-align: center;
   margin: 20px;
+}
+
+#sect4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/cta-bg.jpg");
+  background-attachment: fixed;
+  padding: 300px 0;
+  margin: 75px 0;
+}
+
+#sect4 #bigDaddySpan {
+  font-size: 70px;
+  color: #FFFFFF;
+}
+
+#sect4 button {
+  margin-top: 30px;
+  background-color: #DD4545;
+  color: white;
+  border: 0px solid;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 17px;
 }
