@@ -15888,32 +15888,115 @@ header nav button {
 
 .sect2 {
   display: flex;
+  justify-content: space-evenly;
+  margin: 75px 7px;
 }
 
 .sect2 #img1 {
   background-image: url(../img/services/service-1.jpg);
   font-size: 50px;
   color: white;
-  padding: 70px;
+  padding: 100px;
+  text-align: center;
 }
 
 .sect2 #img1 hr {
   background-color: white;
   border: none;
   border-top: 4px solid white;
+  width: 400px;
+  margin: auto;
 }
 
 .sect2 #img2 {
   background-image: url(../img/services/service-2.jpg);
   font-size: 50px;
+  color: white;
+  padding: 100px;
+  text-align: center;
 }
 
 .sect2 #img2 hr {
   background-color: white;
   border: none;
   border-top: 4px solid white;
+  width: 400px;
+  margin: auto;
 }
 
 .sect2 #img3 {
   background-image: url(../img/services/slider-3.jpg);
+  font-size: 50px;
+  color: white;
+  padding: 100px;
+  text-align: center;
+}
+
+.sect2 #img3 hr {
+  background-color: white;
+  border: none;
+  border-top: 4px solid white;
+  width: 400px;
+  margin: auto;
+}
+
+.sect3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sect3 h3 {
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+.sect3 .rProductsMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 70%;
+  margin: 70px 0;
+}
+
+.sect3 .rProductsMain .rProducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sect3 .rProductsMain .rProducts img {
+  height: 320px;
+}
+
+.sect3 .rProductsMain .rProducts .nomProduit {
+  font-size: 20px;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.sect3 .rProductsMain .rProducts .prixProduit {
+  font-size: 18px;
+  color: #DD4545;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.sect3 .rProductsMain .rProducts .prixBarre {
+  font-size: 18px;
+  color: #908f8f;
+  text-decoration: line-through;
+  font-weight: bold;
+}
+
+.sect3 .rProductsMain .rProducts .sale {
+  color: white;
+  border: 0px solid;
+  padding-top: 21px;
+  background-color: #DD4545;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  margin: 20px;
 }
