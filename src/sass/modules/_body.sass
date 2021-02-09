@@ -7,3 +7,16 @@ body
     color: white
     a
         color: white
+
+//class JS
+
+.fade-in
+    opacity: 0
+    transform: translateY(20vh)
+    visibility: hidden
+    transition: opacity 1s ease-in, transform 1.2s ease-out
+
+.fade-in.appear
+    opacity: 1
+    transform: none
+    visibility: visible

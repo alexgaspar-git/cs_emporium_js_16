@@ -17,7 +17,7 @@
             <a href="">ELEMENTS</a>
             <a href="">ABOUT</a>
             <a href="">CONTACT</a>
-            <button>CONNEXION</button>
+            <button id="btnModal">CONNEXION</button>
             <div class="btnDark">
                 <i class="fas fa-moon"></i>
             </div>
@@ -197,7 +197,7 @@
             <div></div>
         </div>
     </section>
-    <section id="sect6">
+    <section id="sect6" class="fade-in">
         <div class="boiteA">
             <i class="text-dark far fa-check-circle"></i>
             <h5 class="text-dark">TRUSTED BY 10,000+ CUSTOMERS</h5>
@@ -258,6 +258,44 @@
             <span>COPYRIGHT 2020 EL JEFE, ALL RIGHTS RESERVED</span>
         </div>
     </footer>
+    <div class="modalzer">
+        <div class="modalMain" id="modalCo">
+            <div class="modalHaut">
+                <span id="modalTitre">emporium.</span>
+                <div>
+                    <i class="fas fa-times close"></i>
+                </div>
+            </div>
+            <div class="divBtns">
+                <button>Connexion</button>
+                <button>Inscription</button>
+            </div>
+            <div class="inpouteDaddy">
+                <div class="inpoute">
+                    <span>Email Address</span>
+                    <input type="text" placeholder="abcdef@gmail.com">
+                    <span>We'll never share your email with anyone else</span>
+                </div>  
+            </div>
+            <div class="inpouteDaddy">
+                <div class="inpoute">
+                    <span>Password</span>
+                    <input type="password">
+                </div> 
+            </div>
+            <div class="checkDaddy">
+                <input type="checkbox" id="checkB">
+                <span id="checkMe">Check me out</span>
+            </div>
+            <button class="bg-primary" id="submit">Submit</button>
+            <div class="divIcones">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-snapchat-ghost"></i>
+                <i class="fab fa-github"></i>
+            </div>
+        </div>
+    </div>
     <script src="./public/js/main.js"></script>
 </body>
 </html>

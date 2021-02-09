@@ -32,3 +32,32 @@ btnDark.addEventListener('click', () => {
 });
 
 //fade in
+
+const faders = document.querySelectorAll('.fade-in');
+
+const appearOnScroll = new IntersectionObserver(function(entries,appearOnScroll) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            entry.target.classList.add('appear');
+            appearOnScroll.unobserve(entry.target);
+        }
+    });
+});
+
+faders.forEach(el => {
+    appearOnScroll.observe(el);
+});
+
+//modal
+
+let modal = document.querySelector('#modalCo');
+let btnModal = document.querySelector('#btnModal');
+let closeModal = document.querySelectorAll('.close');
+
+btnModal.onclick = function() {
+    modal.style.display = "block"
+}
+
+console.log(closeModal);
