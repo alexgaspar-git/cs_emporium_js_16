@@ -90,3 +90,46 @@ btnInsc.forEach(el => {
         modalDeux.style.display = "block"
     }
 });
+
+//carousel
+
+let pitiPoin = document.querySelectorAll('#pitiPoin>div')
+let rProducts = document.querySelectorAll('.rProducts')
+
+
+pitiPoin[0].onclick = (e) => {
+    pitiPoin.forEach(el => {
+        el.style.backgroundColor = ""
+        e.target.style.backgroundColor = "red"
+    });
+    rProducts.forEach(el => {
+        el.style.left = "0"
+    });
+}
+pitiPoin[1].onclick = (e) => {
+    pitiPoin.forEach(el => {
+        el.style.backgroundColor = ""
+        e.target.style.backgroundColor = "red"
+    });
+    rProducts.forEach(el => {
+        el.style.left = "-25%"
+    });
+}
+pitiPoin[2].onclick = (e) => {
+    pitiPoin.forEach(el => {
+        el.style.backgroundColor = ""
+        e.target.style.backgroundColor = "red"
+    });
+    rProducts.forEach(el => {
+        el.style.left = "-50%"
+    });
+}
+pitiPoin[3].onclick = (e) => {
+    pitiPoin.forEach(el => {
+        el.style.backgroundColor = ""
+        e.target.style.backgroundColor = "red"
+    });
+    rProducts.forEach(el => {
+        el.style.left = "-75%"
+    });
+}

@@ -15906,6 +15906,12 @@ header nav div i {
 }
 
 @media screen and (max-width: 375px) {
+  header h1 {
+    font-size: 45px;
+  }
+  header .titleFixed {
+    display: none;
+  }
   header nav a:nth-of-type(2) {
     display: none;
   }
@@ -15918,9 +15924,15 @@ header nav div i {
   header nav a:nth-of-type(5) {
     display: none;
   }
+  header .navFixed .btnDark {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 376px) and (max-width: 768px) {
+  header .titleFixed {
+    display: none;
+  }
   header nav a:nth-of-type(3) {
     display: none;
   }
@@ -16244,14 +16256,17 @@ header nav div i {
 }
 
 @media screen and (max-width: 375px) {
-  #sect3 .rProductsMain .rProducts img {
-    height: 200px;
+  #sect3 .rProductsMain {
+    justify-content: center;
+  }
+  #sect3 .rProductsMain .rProducts .rProductsAbsol img {
+    height: 250px;
   }
 }
 
 @media screen and (min-width: 376px) and (max-width: 768px) {
-  #sect3 .rProductsMain .rProducts img {
-    height: 200px;
+  #sect3 .rProductsMain {
+    justify-content: center;
   }
 }
 
@@ -16298,6 +16313,11 @@ header nav div i {
   }
 }
 
+#sect5 {
+  overflow: hidden;
+  position: relative;
+}
+
 #sect5 h3 {
   display: flex;
   justify-content: center;
@@ -16307,18 +16327,22 @@ header nav div i {
 
 #sect5 .rProductsMain {
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  overflow-x: auto;
+}
+
+#sect5 .rProductsMain::-webkit-scrollbar {
+  visibility: hidden;
 }
 
 #sect5 .rProductsMain .rProducts {
+  position: relative;
+  left: 0;
+  margin: 0 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 25px;
-}
-
-#sect5 .rProductsMain .rProducts img {
-  height: 220px;
+  transition: 0.5s;
 }
 
 #sect5 .rProductsMain .rProducts .nomProduit {
@@ -16342,15 +16366,53 @@ header nav div i {
 }
 
 #sect5 .rProductsMain .rProducts .sale {
+  margin-bottom: 35px;
+}
+
+#sect5 .rProductsMain .rProducts .rProductsAbsol {
+  position: relative;
+  overflow: hidden;
+}
+
+#sect5 .rProductsMain .rProducts .rProductsAbsol img {
+  height: 320px;
+  transition-duration: 1s;
+}
+
+#sect5 .rProductsMain .rProducts .rProductsAbsol .spanDaddy {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  transition-duration: 1s;
+}
+
+#sect5 .rProductsMain .rProducts .rProductsAbsol .spanDaddy span {
+  background-color: #eb3939;
+  opacity: 0;
   color: white;
-  border: 0px solid;
-  padding-top: 21px;
-  background-color: #DD4545;
-  border-radius: 50%;
-  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  width: 50%;
+  overflow: hidden;
+  transition-duration: 1s;
+}
+
+#sect5 .rProductsMain .rProducts .rProductsAbsol .spanDaddy span:nth-of-type(2) {
+  background-color: #aaa;
+}
+
+#sect5 .rProductsMain .rProducts .rProductsAbsol:hover .spanDaddy span {
+  opacity: 0.8;
   height: 70px;
-  text-align: center;
-  margin: 20px;
+}
+
+#sect5 .rProductsMain .rProducts .rProductsAbsol:hover img {
+  transform: scale(1.1);
 }
 
 #sect5 #pitiPoin {
@@ -16657,4 +16719,122 @@ footer #bottomFtr span {
     top: 0;
     opacity: 1;
   }
+}
+
+.main {
+  width: 50%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+.main .rProductsMain {
+  width: 98%;
+  height: auto;
+  display: flex;
+  justify-content: left;
+  overflow-x: auto;
+}
+
+.main .rProductsMain::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+.main .rProductsMain .rProducts {
+  position: relative;
+  left: 0;
+  text-align: center;
+  padding: 60px;
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.main .rProductsMain .rProducts .nomProduit {
+  font-size: 20px;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.main .rProductsMain .rProducts .prixProduit {
+  font-size: 18px;
+  color: #DD4545;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.main .rProductsMain .rProducts .prixBarre {
+  font-size: 18px;
+  color: #908f8f;
+  text-decoration: line-through;
+  font-weight: bold;
+}
+
+.main .rProductsMain .rProducts .sale {
+  margin-bottom: 35px;
+}
+
+.main .rProductsMain .rProducts .rProductsAbsol {
+  position: relative;
+  overflow: hidden;
+}
+
+.main .rProductsMain .rProducts .rProductsAbsol img {
+  height: 320px;
+  transition-duration: 1s;
+}
+
+.main .rProductsMain .rProducts .rProductsAbsol .spanDaddy {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  transition-duration: 1s;
+}
+
+.main .rProductsMain .rProducts .rProductsAbsol .spanDaddy span {
+  background-color: #eb3939;
+  opacity: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  width: 50%;
+  overflow: hidden;
+  transition-duration: 1s;
+}
+
+.main .rProductsMain .rProducts .rProductsAbsol .spanDaddy span:nth-of-type(2) {
+  background-color: #aaa;
+}
+
+.main .rProductsMain .rProducts .rProductsAbsol:hover .spanDaddy span {
+  opacity: 0.8;
+  height: 70px;
+}
+
+.main .rProductsMain .rProducts .rProductsAbsol:hover img {
+  transform: scale(1.1);
+}
+
+#pitiPoin {
+  display: flex;
+  justify-content: center;
+}
+
+#pitiPoin div {
+  border: 2px solid black;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  margin: 40px 25px;
+  cursor: pointer;
 }

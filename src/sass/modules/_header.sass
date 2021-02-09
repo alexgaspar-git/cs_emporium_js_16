@@ -55,6 +55,10 @@ header
 
 @media screen and (max-width: 375px)
     header
+        h1
+            font-size: 45px
+        .titleFixed
+            display: none
         nav
             a
                 &:nth-of-type(2)
@@ -65,9 +69,15 @@ header
                     display: none
                 &:nth-of-type(5)
                     display: none
+        .navFixed
+            .btnDark
+                display: none
 
 @media screen and (min-width: 376px) and (max-width: 768px)
     header
+        h1
+        .titleFixed
+            display: none
         nav
             a
                 &:nth-of-type(3)
