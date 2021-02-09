@@ -14,8 +14,6 @@
             display: flex
             flex-direction: column
             align-items: center
-            img
-                height: 320px
             .nomProduit
                 font-size: 20px
                 margin: 15px 0
@@ -30,8 +28,42 @@
                 color: #908f8f
                 text-decoration: line-through
                 font-weight: bold
-            div
+            .sale
                 margin-bottom: 35px
+            .rProductsAbsol
+                position: relative
+                overflow: hidden
+                img
+                    height: 320px
+                    transition-duration: 1s
+                .spanDaddy
+                    position: absolute
+                    bottom: 0
+                    width: 100%
+                    z-index: 10
+                    display: flex
+                    justify-content: center
+                    transition-duration: 1s
+                    span
+                        background-color: #eb3939
+                        opacity: 0
+                        color: white
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        height: 0
+                        width: 50%
+                        overflow: hidden
+                        transition-duration: 1s
+                        &:nth-of-type(2)
+                            background-color: #aaa
+            .rProductsAbsol:hover .spanDaddy span 
+                opacity: 0.8
+                height: 70px
+            .rProductsAbsol:hover img
+                transform: scale(1.1)
+        
+
 
 @media screen and (max-width: 375px)
     #sect3

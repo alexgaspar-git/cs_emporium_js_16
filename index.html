@@ -17,15 +17,16 @@
             <a href="">ELEMENTS</a>
             <a href="">ABOUT</a>
             <a href="">CONTACT</a>
-            <div id="light"></div>
-            <div id="dark"></div>
             <button>CONNEXION</button>
+            <div class="btnDark">
+                <i class="fas fa-moon"></i>
+            </div>
         </nav>
     </header>
     <section id="sect1">
         <div>
             <span>Shop at</span>
-            <span> emporium. </span>
+            <span class="text-dark"> emporium. </span>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni porro ea repudiandae soluta at excepturi voluptas distinctio optio ut recusandae </p>
             <button>SALE ITEMS</button>
         </div>
@@ -49,53 +50,107 @@
         <h3> Recent Products </h3>
         <div class="rProductsMain">
             <div class="rProducts">
-                <img src="./public/img/products_mini/product-luxry-sofa.jpg" alt="">
+                <div class="rProductsAbsol">
+                    <img src="./public/img/products_mini/product-luxry-sofa.jpg" alt="">
+                    <div class="spanDaddy">
+                        <span>View Details</span>
+                        <span>Add to cart</span>
+                    </div>
+                </div>    
                 <span class="nomProduit">Luxury Sofa</span>
                 <span class="prixProduit">$600.00</span>
             </div>
             <div class="rProducts">
-                <img src="./public/img/products_mini/product-gloves.jpg" alt="">
+                <div class="rProductsAbsol">
+                    <img src="./public/img/products_mini/product-gloves.jpg" alt="">
+                    <div class="spanDaddy">
+                        <span>View Details</span>
+                        <span>Add to cart</span>
+                    </div>
+                </div>
                 <span class="nomProduit" id="test">Leather Gloves</span>
-                <div>
+                <div class="sale">
                     <span class="prixBarre">$34.00</span>
                     <span class="prixProduit">$27.00</span>
                 </div>
             </div>
             <div class="rProducts">
-                <img src="./public/img/products_mini/product-cups.jpg" alt="">
+                <div class="rProductsAbsol">
+                    <img src="./public/img/products_mini/product-cups.jpg" alt="">
+                    <div class="spanDaddy">
+                        <span>View Details</span>
+                        <span>Add to cart</span>
+                    </div>
+                </div>
                 <span class="nomProduit">Colorful Bowl</span>
                 <span class="prixProduit">$18.00</span>
             </div>
             <div class="rProducts">
-                <img src="./public/img/products_mini/product-bag.jpg" alt="">
+                <div class="rProductsAbsol">
+                    <img src="./public/img/products_mini/product-bag.jpg" alt="">
+                    <div class="spanDaddy">
+                        <span>View Details</span>
+                        <span>Add to cart</span>
+                    </div>
+                </div>    
                 <span class="nomProduit">Women's Bag</span>
-                <div>
+                <div class="sale">
                     <span class="prixBarre">$420.00</span>
                     <span class="prixProduit">$350.00</span>
                 </div>
             </div>
             <div class="rProducts">
-                <img src="./public/img/products_mini/product-tshitr.jpg" alt="">
+                <div class="rProductsAbsol">
+                    <img src="./public/img/products_mini/product-tshitr.jpg" alt="">
+                    <div class="spanDaddy">
+                        <span>View Details</span>
+                        <span>Add to cart</span>
+                    </div>
+                </div>  
                 <span class="nomProduit">Minimal T-Shirt</span>
                 <span class="prixProduit">$15.00</span>
             </div>
             <div class="rProducts">
-                <img src="./public/img/products_mini/product-luxry-sofa.jpg" alt="">
+                <div class="rProductsAbsol">
+                    <img src="./public/img/products_mini/product-luxry-sofa.jpg" alt="">
+                    <div class="spanDaddy">
+                        <span>View Details</span>
+                        <span>Add to cart</span>
+                    </div>
+                </div>
                 <span class="nomProduit">Plates Set</span>
                 <span class="prixProduit">$30.00</span>
             </div>
             <div class="rProducts">
-                <img src="./public/img/products_mini/product-modern-sofa.jpg" alt="">
+                <div class="rProductsAbsol">
+                    <img src="./public/img/products_mini/product-modern-sofa.jpg" alt="">
+                    <div class="spanDaddy">
+                        <span>View Details</span>
+                        <span>Add to cart</span>
+                    </div>
+                </div>  
                 <span class="nomProduit">Modern Sofa</span>
                 <span class="prixProduit">$900.00</span>
             </div>
             <div class="rProducts">
-                <img src="./public/img/products_mini/product-bed.jpg" alt="">
+                <div class="rProductsAbsol">
+                    <img src="./public/img/products_mini/product-bed.jpg" alt="">
+                    <div class="spanDaddy">
+                        <span>View Details</span>
+                        <span>Add to cart</span>
+                    </div>
+                </div>   
                 <span class="nomProduit">Bed Linen</span>
                 <span class="prixProduit">$79.00</span>
             </div>
             <div class="rProducts">
-                <img src="./public/img/products_mini/product-shoes.jpg" alt="">
+                <div class="rProductsAbsol">
+                    <img src="./public/img/products_mini/product-shoes.jpg" alt="">
+                    <div class="spanDaddy">
+                        <span>View Details</span>
+                        <span>Add to cart</span>
+                    </div>
+                </div>  
                 <span class="nomProduit">Minimal Shoes</span>
                 <span class="prixProduit">$60.00</span>
             </div>
@@ -144,8 +199,8 @@
     </section>
     <section id="sect6">
         <div class="boiteA">
-            <i class="far fa-check-circle"></i>
-            <h5>TRUSTED BY 10,000+ CUSTOMERS</h5>
+            <i class="text-dark far fa-check-circle"></i>
+            <h5 class="text-dark">TRUSTED BY 10,000+ CUSTOMERS</h5>
             <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem veniam molestiae nemo debitis nulla omnis.</span>
             <div>
                 <button>LEARN MORE</button>
@@ -160,8 +215,8 @@
             </div>
         </div>
         <div class="boiteA">
-            <i class="far fa-check-circle"></i>
-            <h5>TRUSTED BY 10,000+ CUSTOMERS</h5>
+            <i class="text-dark far fa-check-circle"></i>
+            <h5 class="text-dark">TRUSTED BY 10,000+ CUSTOMERS</h5>
             <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit itaque eum, ut ratione saepe repudiandae.</span>
             <div>
                 <button>LEARN MORE</button>

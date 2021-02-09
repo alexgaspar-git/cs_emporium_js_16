@@ -14,6 +14,20 @@ let fixeroo = () => {
     }
 }
 
-console.log(window.pageYoffset);
-
 window.onscroll = function() {fixeroo()};
+
+//night mode
+
+let btnDark = document.querySelector('.btnDark');
+let body = document.querySelector('body');
+
+btnDark.addEventListener('click', () => {
+    body.classList.toggle('dark');
+    nav.classList.toggle('dark');
+    if (body.classList[0] == 'dark') {
+        btnDark.innerHTML = '<i class="fas fa-sun"></i>'
+    } else {
+        btnDark.innerHTML = '<i class="fas fa-moon"></i>'
+    }
+});
+

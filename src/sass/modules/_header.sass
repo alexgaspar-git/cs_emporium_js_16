@@ -8,6 +8,7 @@ header
         display: flex
         justify-content: center
         align-items: center
+        z-index: 1
         a
             margin: 0px 20px
             color: #383737
@@ -16,6 +17,21 @@ header
             padding: 8px
             background-color: #6C757D
             color: #FFFFFF
+            margin-right: 20px
+        div
+            background-color: #292929
+            border: 0px solid
+            border-radius: 50%
+            height: 30px
+            width: 30px
+            display: flex
+            justify-content: center
+            align-items: center
+            cursor: pointer
+            i
+                color: white
+                font-size: 18px
+            
 
 // class JS
 
@@ -33,6 +49,9 @@ header
     right: 0
     background-color: white
     padding: 30px 0
+
+.dark
+    background-color: #292929
 
 @media screen and (max-width: 375px)
     header
