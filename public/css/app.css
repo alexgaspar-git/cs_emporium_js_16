@@ -16138,16 +16138,20 @@ header nav button {
   font-weight: bold;
 }
 
-#sect3 .rProductsMain .rProducts .sale {
-  color: white;
-  border: 0px solid;
-  padding-top: 21px;
-  background-color: #DD4545;
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  text-align: center;
-  margin: 20px;
+#sect3 .rProductsMain .rProducts div {
+  margin-bottom: 35px;
+}
+
+@media screen and (max-width: 375px) {
+  #sect3 .rProductsMain .rProducts img {
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  #sect3 .rProductsMain .rProducts img {
+    height: 200px;
+  }
 }
 
 #sect4 {
