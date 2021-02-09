@@ -16179,6 +16179,23 @@ header nav button {
   font-size: 17px;
 }
 
+@media screen and (max-width: 375px) {
+  #sect4 {
+    text-align: center;
+    padding: 150px 0;
+  }
+  #sect4 #bigDaddySpan {
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  #sect4 {
+    text-align: center;
+    padding: 150px 0;
+  }
+}
+
 #sect5 h3 {
   display: flex;
   justify-content: center;
