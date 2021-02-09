@@ -16273,7 +16273,6 @@ header nav button {
 
 #sect6 .boiteA {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   width: 30%;
@@ -16306,7 +16305,6 @@ header nav button {
 
 #sect6 .boiteB {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   width: 28%;
@@ -16337,6 +16335,20 @@ header nav button {
   color: black;
   padding: 12px;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 375px) {
+  #sect6 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #sect6 .boiteA {
+    width: 90%;
+  }
+  #sect6 .boiteB {
+    width: 90%;
+  }
 }
 
 footer #topFtr {
