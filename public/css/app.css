@@ -15892,10 +15892,6 @@ header nav div i {
   padding: 30px 0;
 }
 
-.dark {
-  background-color: #292929;
-}
-
 @media screen and (max-width: 375px) {
   header nav a:nth-of-type(2) {
     display: none;
@@ -16516,4 +16512,101 @@ footer #bottomFtr span {
   footer #bottomFtr span {
     font-size: 15px;
   }
+}
+
+.modalMain {
+  width: 800px;
+  background-color: grey;
+  border-radius: 5px;
+}
+
+.modalMain .modalHaut {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+
+.modalMain .modalHaut #modalTitre {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.modalMain .modalHaut div {
+  cursor: pointer;
+}
+
+.modalMain .modalHaut div i {
+  color: white;
+  background-color: #DD4545;
+  font-size: 35px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.modalMain .divBtns {
+  display: flex;
+  justify-content: center;
+}
+
+.modalMain .divBtns button {
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 22px;
+  color: white;
+  background-color: #DD4545;
+}
+
+.modalMain .inpouteDaddy {
+  display: flex;
+  justify-content: center;
+}
+
+.modalMain .inpouteDaddy .inpoute {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalMain .inpouteDaddy .inpoute span {
+  font-size: 19px;
+  margin: 10px 0;
+}
+
+.modalMain .inpouteDaddy .inpoute span:nth-of-type(2) {
+  margin: 0;
+  font-size: 16px;
+  color: #aaa;
+}
+
+.modalMain .inpouteDaddy .inpoute input {
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.modalMain .checkDaddy #checkB {
+  margin-top: 20px;
+  margin-left: 45px;
+}
+
+.modalMain #submit {
+  margin: 20px 0 20px 45px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+}
+
+.modalMain .divIcones {
+  display: flex;
+  justify-content: center;
+}
+
+.modalMain .divIcones i {
+  font-size: 40px;
+  margin: 20px 10px;
 }
