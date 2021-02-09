@@ -15918,7 +15918,43 @@ header nav button {
 
 @media screen and (max-width: 375px) {
   #sect1 {
+    align-items: center;
     flex-direction: column;
+  }
+  #sect1 div {
+    text-align: center;
+  }
+  #sect1 div span:first-child {
+    font-size: 30px;
+    padding-top: 30px;
+  }
+  #sect1 div span:nth-child(2) {
+    font-size: 50px;
+    margin-top: 0px;
+  }
+  #sect1 div p {
+    width: 300px;
+  }
+  #sect1 div button {
+    display: flex;
+    margin: auto;
+    width: 40%;
+  }
+  #sect1 img {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  #sect1 {
+    align-items: center;
+    flex-direction: column;
+  }
+  #sect1 div button {
+    margin: auto;
+  }
+  #sect1 img {
+    height: 500px;
   }
 }
 

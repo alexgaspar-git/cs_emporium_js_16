@@ -30,4 +30,31 @@
 
 @media screen and (max-width: 375px)
     #sect1
+        align-items: center
         flex-direction: column
+        div
+            text-align: center
+            span:first-child
+                font-size: 30px
+                padding-top: 30px
+            span:nth-child(2)
+                font-size: 50px
+                margin-top: 0px
+            p
+                width: 300px
+            button
+                display: flex
+                margin: auto
+                width: 40%
+        img
+            height: 400px
+
+@media screen and (min-width: 376px) and (max-width: 768px)
+    #sect1
+        align-items: center
+        flex-direction: column
+        div
+            button
+                margin: auto
+        img
+            height: 500px
