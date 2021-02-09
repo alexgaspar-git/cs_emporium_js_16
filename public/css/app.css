@@ -15820,7 +15820,7 @@ body {
 }
 
 .dark {
-  background-color: #2a2a2a;
+  background-color: #2a2a2a !important;
   color: white;
 }
 
@@ -15901,7 +15901,7 @@ header nav div i {
   top: 0;
   left: 0;
   right: 0;
-  background-color: white;
+  background-color: #ffffff;
   padding: 30px 0;
 }
 
@@ -16560,6 +16560,7 @@ footer #bottomFtr span {
 .modalzer .modalMain .modalHaut #modalTitre {
   font-size: 50px;
   font-weight: bold;
+  color: black;
 }
 
 .modalzer .modalMain .modalHaut div {
@@ -16603,6 +16604,7 @@ footer #bottomFtr span {
 .modalzer .modalMain .inpouteDaddy .inpoute span {
   font-size: 19px;
   margin: 10px 0;
+  color: black;
 }
 
 .modalzer .modalMain .inpouteDaddy .inpoute span:nth-of-type(2) {
@@ -16622,6 +16624,10 @@ footer #bottomFtr span {
   margin-left: 45px;
 }
 
+.modalzer .modalMain .checkDaddy #checkMe {
+  color: black;
+}
+
 .modalzer .modalMain #submit {
   margin: 20px 0 20px 45px;
   font-size: 20px;
@@ -16637,6 +16643,7 @@ footer #bottomFtr span {
 }
 
 .modalzer .modalMain .divIcones i {
+  color: black;
   font-size: 40px;
   margin: 20px 10px;
 }
