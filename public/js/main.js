@@ -53,11 +53,40 @@ faders.forEach(el => {
 //modal
 
 let modal = document.querySelector('#modalCo');
+let modalDeux = document.querySelector('#modalInsc');
 let btnModal = document.querySelector('#btnModal');
 let closeModal = document.querySelectorAll('.close');
+let btnCo = document.querySelectorAll('.btnCo')
+let btnInsc = document.querySelectorAll('.btnInsc')
 
 btnModal.onclick = function() {
     modal.style.display = "block"
 }
 
-console.log(closeModal);
+closeModal.forEach(el => {
+    el.onclick = function() {
+        modal.style.display = "none"
+        modalDeux.style.display = "none"
+    }
+});
+
+window.onclick = function(event) {
+    if (event.target == modal || event.target == modalDeux) {
+        modal.style.display = "none";
+        modalDeux.style.display = "none"
+    }
+}
+
+btnCo.forEach(el => {
+    el.onclick = function() {
+        modal.style.display = "block"
+        modalDeux.style.display = "none"
+    }
+});
+
+btnInsc.forEach(el => {
+    el.onclick = function () {
+        modal.style.display = "none"
+        modalDeux.style.display = "block"
+    }
+});
