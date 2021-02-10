@@ -16355,7 +16355,6 @@ header nav div i {
   font-size: 18px;
   color: #DD4545;
   font-weight: bold;
-  margin-bottom: 35px;
 }
 
 #sect5 .rProductsMain .rProducts .prixBarre {
@@ -16363,10 +16362,6 @@ header nav div i {
   color: #908f8f;
   text-decoration: line-through;
   font-weight: bold;
-}
-
-#sect5 .rProductsMain .rProducts .sale {
-  margin-bottom: 35px;
 }
 
 #sect5 .rProductsMain .rProducts .rProductsAbsol {
@@ -16427,6 +16422,12 @@ header nav div i {
   border-radius: 50%;
   display: flex;
   margin: 40px 25px;
+}
+
+@media screen and (max-width: 375px) {
+  #sect5 {
+    display: none;
+  }
 }
 
 #sect6 {

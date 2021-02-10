@@ -96,7 +96,6 @@ btnInsc.forEach(el => {
 let pitiPoin = document.querySelectorAll('#pitiPoin>div')
 let rProducts = document.querySelectorAll('.rProducts')
 
-
 pitiPoin[0].onclick = (e) => {
     pitiPoin.forEach(el => {
         el.style.backgroundColor = ""
