@@ -15944,6 +15944,12 @@ header nav div i {
   }
 }
 
+@media screen and (max-width: 1400px) {
+  header .titleFixed {
+    display: none;
+  }
+}
+
 #sect1 {
   background-color: #F3F3F3;
   display: flex;
