@@ -16315,7 +16315,6 @@ header nav div i {
 
 #sect5 {
   overflow: hidden;
-  position: relative;
 }
 
 #sect5 h3 {
@@ -16420,13 +16419,27 @@ header nav div i {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  display: flex;
   margin: 40px 25px;
+}
+
+#sect5 #swipe {
+  display: none;
+  justify-content: center;
+  color: #7a7979;
 }
 
 @media screen and (max-width: 375px) {
   #sect5 {
     display: none;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  #sect5 #pitiPoin {
+    display: none;
+  }
+  #sect5 #swipe {
+    display: flex;
   }
 }
 
